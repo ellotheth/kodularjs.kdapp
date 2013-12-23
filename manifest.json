@@ -1,0 +1,41 @@
+{ 
+  "devMode": true,
+  "authorNick": "gemma",
+  "author": "Gemma Lynn",
+  "multiple": false,
+  "background": false,
+  "hiddenHandle": false,
+  "forceUpdate": false,
+  "openWith": "lastActive",
+  "behavior": "application",
+  "name": "KodularJS",
+  "version": "0.0.1",
+  "repo": "git://github.com/ellotheth/kodularjs.kdapp.git",
+  "description": "AngularJS by Google, via @joshdmiller's ngBoilerplate",
+  "path": "~/Applications/kodularjs.kdapp/",
+  "category": "web-app",
+  "source": {
+    "blocks": {
+      "app": {
+        "files": [
+          "./common.coffee",
+          "./dashboardpane.coffee",
+          "./installpane.coffee",
+          "./main.coffee"
+        ]
+      }
+    },
+    "stylesheets": [
+      "./resources/style.css"
+    ]
+  },
+  "options": {
+    "type": "tab"
+  },
+  "icns": {
+    "128": "./resources/angularjs-icon-128.png",
+    "256": "./resources/angularjs-icon-256.png"
+  },
+    "screenshots": [
+  ]
+}

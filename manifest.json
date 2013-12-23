@@ -1,4 +1,4 @@
-{ 
+{
   "devMode": true,
   "authorNick": "gemma",
   "author": "Gemma Lynn",
@@ -36,6 +36,8 @@
     "128": "./resources/angularjs-icon-128.png",
     "256": "./resources/angularjs-icon-256.png"
   },
-    "screenshots": [
+  "screenshots": [
+    "./resources/kodularjs-ss-create.png",
+    "./resources/kodularjs-ss-dashboard.png"
   ]
 }

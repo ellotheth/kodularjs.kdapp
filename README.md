@@ -11,11 +11,12 @@ that creates and publishes AngularJS applications. It uses the
 
 ### Installation
 
+[![Clone in Koding](http://kbutton.org/app.png?v1387787257)](http://kbutton.org/ellotheth/kodularjs.kdapp)
+
 1. Sign up for [Koding.com](http://koding.com/)
 2. Clone this repo into your `~/Applications` directory:
    `git clone https://github.com/ellotheth/kodularjs.kdapp.git ~/Applications/kodularjs.kdapp`
 3. Refresh your Koding App list.
-4. Click the KodularJS button.
 
 ### Screenshots
 

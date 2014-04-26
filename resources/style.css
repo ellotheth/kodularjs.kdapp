@@ -18,7 +18,7 @@ KodularJS styles
 .kodularjs .kdlistview-kodularjs-blog .kdlistitemview.kdlistitemview-kodularjs-blog a.name-link:hover{text-decoration:none}
 .kodularjs .kdlistview-kodularjs-blog .kdlistitemview.kdlistitemview-kodularjs-blog div.instance-block{color:#aaa;float:left}
 .kodularjs .kdlistview-kodularjs-blog .kdlistitemview.kdlistitemview-kodularjs-blog time{position:absolute;right:20px;top:11px;font-size:11px;color:rgba(0,0,0,0.3);display:block;float:right}
-.kodularjs .kdlistview-kodularjs-blog .kdlistitemview.kdlistitemview-kodularjs-blog a.name-link{min-width:220px}
+.kodularjs .kdlistview-kodularjs-blog .kdlistitemview.kdlistitemview-kodularjs-blog p.instance-name{min-width:220px;float:left;}
 .kodularjs .kdlistview-kodularjs-blog .kdlistitemview.kdlistitemview-kodularjs-blog a.delete-link{width:20px;height:20px;position:absolute;left:0;top:11px;opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);background-position:-80px -520px;background-image:url("https://api.koding.com/images/_kd.sprites.png");background-color:transparent;background-repeat:no-repeat}
 .kodularjs .kdformview .kdview.formline label,.wordpressinstaller .kdformview .kdview.formline .kdinput{height:28px;line-height:28px}
 .kodularjs .kdformview .kdview.formline label{min-width:230px;color:#444;margin:0;text-shadow:0 1px 0 #fff;}
@@ -52,4 +52,12 @@ KodularJS styles
   opacity   : 1;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
+}
+
+.kodularjs div.instance-block table {
+    margin-bottom: .5em;
+}
+.kodularjs div.instance-block table th {
+    text-align: right;
+    padding-right: 1em;
 }

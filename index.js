@@ -1,4 +1,4 @@
-/* Compiled by kdc on Mon Dec 23 2013 07:17:27 GMT+0000 (UTC) */
+/* Compiled by kdc on Mon Dec 23 2013 09:05:15 GMT+0000 (UTC) */
 (function() {
 /* KDAPP STARTS */
 /* BLOCK STARTS: /home/gemma/Applications/kodularjs.kdapp/common.coffee */
@@ -372,7 +372,7 @@ KodularJSInstalledAppListItem = (function(_super) {
     instancesDir = "kodularjs";
     url = "https://" + domain + "/" + instancesDir + "/" + name;
     nickname = KD.whoami().profile.nickname;
-    return "{{> this.delete}}\n<a target='_blank' class='name-link' href='" + url + "'> {{#(name)}} </a>\n<div class=\"instance-block\">\n    KodularJS Project Path: /home/" + nickname + "/" + instancesDir + "/{{#(name)}}\n    <br />\n    KodularJS Web Path: /home/" + nickname + "/Web/" + instancesDir + "/{{#(name)}}\n    <br />\n    AngularJS Version: {{#(angularjsversion)}}\n    <br />\n    {{> this.terminalButton}}   {{> this.serverButton}}\n</div>\n<time datetime='" + (new Date(timestamp)) + "'>" + ($.timeago(new Date(timestamp))) + "</time>";
+    return "{{> this.delete}}\n<p class=\"instance-name\">\n    <a target='_blank' class=\"name-link\" href='" + url + "'>{{#(name)}}</a><br />\n    <a target='_blank' href='" + url + "'>" + url + "</a>\n</p>\n<div class=\"instance-block\">\n    <table>\n        <tr>\n            <th>KodularJS Project Path</th>\n            <td>/home/" + nickname + "/" + instancesDir + "/{{#(name)}}</td>\n        </tr>\n        <tr>\n            <th>KodularJS Web Path</th>\n            <td>/home/" + nickname + "/Web/" + instancesDir + "/{{#(name)}}</td>\n        </tr>\n        <tr>\n            <th>AngularJS Version</th>\n            <td>{{#(angularjsversion)}}</td>\n        </tr>\n    </table>\n    {{> this.terminalButton}}   {{> this.serverButton}}\n</div>\n<time datetime='" + (new Date(timestamp)) + "'>" + ($.timeago(new Date(timestamp))) + "</time>";
   };
 
   return KodularJSInstalledAppListItem;

@@ -79,10 +79,10 @@ class DashboardPane extends KodularJSPane
                   """
         buttons :
           Visit:
-            title: "open http://#{domain}/#{instancesDir}/#{name}"
+            title: "Open https://#{domain}/#{instancesDir}/#{name}"
             cssClass: "modal-clean-green"
             callback: =>
-              @openInNewTab "http://#{domain}/#{instancesDir}/#{name}"
+              @openInNewTab "https://#{domain}/#{instancesDir}/#{name}"
 
       modal.on "terminal.event", (data)->
         new KDNotificationView
@@ -219,14 +219,25 @@ class KodularJSInstalledAppListItem extends KDListItemView
     {nickname} = KD.whoami().profile
     """
     {{> @delete}}
-    <a target='_blank' class='name-link' href='#{url}'> {{#(name)}} </a>
+    <p class="instance-name">
+        <a target='_blank' class="name-link" href='#{url}'>{{#(name)}}</a><br />
+        <a target='_blank' href='#{url}'>#{url}</a>
+    </p>
     <div class="instance-block">
-        KodularJS Project Path: /home/#{nickname}/#{instancesDir}/{{#(name)}}
-        <br />
-        KodularJS Web Path: /home/#{nickname}/Web/#{instancesDir}/{{#(name)}}
-        <br />
-        AngularJS Version: {{#(angularjsversion)}}
-        <br />
+        <table>
+            <tr>
+                <th>KodularJS Project Path</th>
+                <td>/home/#{nickname}/#{instancesDir}/{{#(name)}}</td>
+            </tr>
+            <tr>
+                <th>KodularJS Web Path</th>
+                <td>/home/#{nickname}/Web/#{instancesDir}/{{#(name)}}</td>
+            </tr>
+            <tr>
+                <th>AngularJS Version</th>
+                <td>{{#(angularjsversion)}}</td>
+            </tr>
+        </table>
         {{> @terminalButton}}   {{> @serverButton}}
     </div>
     <time datetime='#{new Date(timestamp)}'>#{$.timeago new Date(timestamp)}</time>
